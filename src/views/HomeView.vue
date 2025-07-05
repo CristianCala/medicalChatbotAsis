@@ -1,5 +1,5 @@
 <template>
-	<div class="min-h-screen flex items-center justify-center bg-slate-800">
+	<div class="min-h-screen flex items-center justify-center">
 		<div class="bg-white rounded-2xl shadow-lg p-8 w-80 text-center space-y-6">
 			<div class="relative mx-auto w-20 h-20">
 				<div class="bg-teal-400 rounded-full w-full h-full flex items-center justify-center">
@@ -29,7 +29,10 @@
 				HelpDesk Medical Assistant
 			</p>
 
-			<button class="text-xl bg-teal-400 text-white font-semibold px-6 py-2 rounded-lg hover:bg-teal-500 transition w-full">
+			<button
+				class="text-xl bg-teal-400 text-white font-semibold px-6 py-2 rounded-lg hover:bg-teal-500 transition w-full"
+				@click="$router.push('/chat')"
+			>
 				Iniciar
 			</button>
 		</div>
